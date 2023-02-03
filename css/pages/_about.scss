@@ -1,6 +1,7 @@
+// media screen à la fin 
+
 main {
    font-family: $typo;
-   z-index: 30 ;
 }
 .our {
    @include centrer;
@@ -29,7 +30,7 @@ main {
 }
 // partie best service 
 .best__service {
-   background: url(../../img/gallery/section_bg02.jpg) no-repeat left/cover;
+   background: url(../img/gallery/section_bg02.jpg) no-repeat left/cover;
    height: auto;
    
    .best__service__wrapper {
