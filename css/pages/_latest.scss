@@ -1,0 +1,74 @@
+.main__latest {
+   background: $couleur-bg;
+   padding-bottom: 50px;
+}
+// partie colle droite avec txt 
+.latest__wrapper {
+   @include centrer ; 
+   display: grid;
+   grid-template-columns: 1fr;
+   padding: 75px 0;
+}
+.latest__img {
+   
+   img {
+      width: 100%;
+      display: block;
+   }
+}
+.latest__txt {
+   
+   h3 {
+      font-size: 30px;
+
+      &:nth-of-type(2) {
+         margin-top: 50px;
+      }
+   }
+   p {
+      line-height: 30px;
+      color: $couleur-txt;
+   }
+}
+.share {
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   gap: 10px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+   h3 {
+      font-size: 25px;
+   }
+
+   .rs a {
+      margin: 0 2px;
+   }
+}
+.latest__add {
+   display: none;
+}
+
+@media screen and (min-width: 1000px) {
+   .latest__wrapper {
+      grid-template-columns: 3fr 1fr;
+      gap: 30px;
+   }
+   .latest__add {
+      display: block;
+
+      img {
+         display: block;
+         width: 80%;
+         margin: 0 auto;
+      }
+   }
+   .rs__stats{
+      margin-bottom: 40px;
+   }
+   .share {
+      margin-bottom: 0;
+   }
+}
+

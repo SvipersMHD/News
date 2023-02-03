@@ -1,0 +1,77 @@
+.map {
+   @include centrer;
+   padding: 50px 0;
+   display: none;
+   
+   iframe {
+      width: 100%;
+   }
+}
+.form {
+   @include centrer ;
+
+   h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+   }
+   textarea, input[type="text"], input[type="mail"] {
+      width: 100%;
+      padding:15px 10px;
+      color: $couleur-txt;
+      border:1px solid $couleur-gris;
+      margin-bottom: 20px;
+      outline: none;
+      font-size: 12px;
+   }
+   textarea {
+      min-height: 150px;
+   }
+   input[type="submit"] {
+      text-transform: uppercase;
+      color: $couleur-rouge;
+      padding: 20px 50px;
+      border: 1px solid $couleur-rouge;
+      background: none;
+      margin-bottom: 20px;
+      display: block;
+   }
+}
+.form__info {
+
+   >div {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 30px 0;
+      
+      >span {
+         font-size: 25px;
+         color: $couleur-gris;
+      }
+      .span__info__gris {
+         color: $couleur-gris;
+         display: block;
+         margin-top: 5px;
+      }
+   }
+}
+
+@media screen and (min-width: 550px) {
+   .map {
+      display: block;
+   }
+   .form {
+      .name__mail {
+         display: flex;
+         gap: 20px;
+      }
+   }
+}
+@media screen and (min-width: 1000px) {
+   .form__wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+   }
+
+}
