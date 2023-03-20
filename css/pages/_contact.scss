@@ -9,10 +9,12 @@
 }
 .form {
    @include centrer ;
+   padding: 50px 0;
 
    h3 {
       font-size: 30px;
       margin-bottom: 20px;
+      margin-top: 0;
    }
    textarea, input[type="text"], input[type="mail"] {
       width: 100%;
@@ -32,21 +34,22 @@
       padding: 20px 50px;
       border: 1px solid $couleur-rouge;
       background: none;
-      margin-bottom: 20px;
       display: block;
    }
 }
 .form__info {
-
+   padding: 50px 0 0;
+   
    >div {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 15px;
-      margin: 30px 0;
+      margin: 0 0 30px;
       
       >span {
          font-size: 25px;
          color: $couleur-gris;
+         align-self: center;
       }
       .span__info__gris {
          color: $couleur-gris;
@@ -68,10 +71,17 @@
    }
 }
 @media screen and (min-width: 1000px) {
+   .form {
+      padding-top: 0;
+      padding-bottom: 50px;
+   }
    .form__wrapper {
       display: grid;
       grid-template-columns: 3fr 1fr;
       gap: 20px;
+   }
+   .form__info {
+      padding: 0;
    }
 
 }
