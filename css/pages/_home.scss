@@ -109,8 +109,9 @@
    
    .whats__new {
       background: white;
-      padding: 20px;
+      padding: 0 20px;
       border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,.1);
    }
 }
 .whats__new__title {
@@ -219,6 +220,7 @@
 // reseau sociaux nombre de fan 
 .rs__stats {
    max-height: 200px;
+   width: 100%;
    background: white;
    padding: 20px;
    border-radius: 5px;
@@ -226,6 +228,7 @@
    grid-template-columns: 1fr 1fr;
    gap: 10px;
    order: 2;
+   box-shadow: 0px 0px 15px rgba(0,0,0,.1);
    
    .rs__stats__box {
       border: 1px solid $couleur-gris;
@@ -259,6 +262,7 @@
    padding: 20px;
    margin-top: 50px;
    border-radius: 5px;
+   box-shadow: 0px 0px 15px rgba(0,0,0,.1);
    
    h4 {
       font-size: 18px;
@@ -334,6 +338,7 @@
    background: white;
    padding: 20px;
    border-radius: 10px;
+   box-shadow: 0px 0px 15px rgba(0,0,0,.1);
 
    h3 {
       margin: 10px 0 20px ;
